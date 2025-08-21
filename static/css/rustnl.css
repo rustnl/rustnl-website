@@ -5637,7 +5637,7 @@ section.containter h1, h2, h3 {
 }
 
 .hero:after {
-    background-image: url(./stripes.svg);
+    background-image: url(/images/stripes.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -5668,17 +5668,6 @@ section.containter h1, h2, h3 {
 
 .hero.page img {
     max-height: 3rem
-}
-
-;
-background-position:center center;
-background-repeat:no-repeat;
-background-size:100% auto;
-content:"";
-display:block;
-height:var(--space-6);
-position:relative;
-margin:var(--space-12) 0
 }
 
 .last-year {
@@ -5992,7 +5981,7 @@ margin:var(--space-12) 0
 }
 
 .sponsors:before {
-    background-image: url(./stripes.svg);
+    background-image: url(/images/stripes.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -6086,10 +6075,10 @@ margin:var(--space-12) 0
     text-align: center
 }
 
-.rustnl2024:before,
+.article:not(#about):before,
 .join:before,
 .contact:before {
-    background-image: url(./stripes.svg);
+    background-image: url(/images/stripes.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -6139,7 +6128,7 @@ margin:var(--space-12) 0
 
 .youtube:before,
 .youtube:after {
-    background-image: url(./stripes.svg);
+    background-image: url(/images/stripes.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: calc(100% + 2px) auto;
@@ -6152,6 +6141,10 @@ margin:var(--space-12) 0
 
 .youtube:after {
     rotate: -180deg
+}
+
+#contact {
+    margin-bottom: var(--space-12);
 }
 
 .footer {
