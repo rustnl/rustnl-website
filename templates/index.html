@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% for key in section.extra.articles %}
+    {% set article = get_page(path="./" ~ key ~ ".md") %}
+    {% include "section.html" %}
+  {% endfor %}
+  {% include "partials/members.html" %}
+  {% include "partials/organizers.html" %}
+  {% include "partials/join-us.html" %}
+  {% include "partials/contact.html" %}
+{% endblock content %}
