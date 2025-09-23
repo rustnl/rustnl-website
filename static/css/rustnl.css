@@ -6075,7 +6075,7 @@ section.containter h1, h2, h3 {
     text-align: center
 }
 
-.article:not(#about):before,
+.article-container ~ .article-container .article:before,
 .join:before,
 .contact:before {
     background-image: url(/images/stripes.svg);
@@ -6084,9 +6084,9 @@ section.containter h1, h2, h3 {
     background-size: 100% auto;
     content: "";
     display: block;
-    height: var(--space-6);
+    height: var(--space-1);
     position: relative;
-    margin: var(--space-12) 0
+    margin: 0 0 var(--space-12) 0;
 }
 
 .sponsors.unconf-partners:before {

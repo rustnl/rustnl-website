@@ -2,7 +2,9 @@
   <div class="text-lg md:col-start-3 md:col-end-11 xl:col-start-4 xl:col-end-10 article" id="{{ key }}">
     <div class="markdown">
       <h2 class="text-2xl space-y-6">{{ article.title }}</h2>
-      {{ article.content | safe }}
+      {{ article.summary | safe }}
+
+      <a class="button" href="{{ article.extra.moreLink }}">Read more</a>
     </div>
   </div>
 </section>

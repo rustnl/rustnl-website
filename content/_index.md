@@ -1,13 +1,12 @@
 +++
-title = "Home - Trifecta Tech Foundation"
+title = "Home"
 template = "index.html"
 
 [extra]
 
 articles = [
-    "about",
-    "article/rustweek_2026",
-    "article/rustweek_2025",
-    "article/rustnl_2024"
+    "article/about_intro",
+    "article/event_intro", 
+#   "article/maintainer_fund_intro",
 ]
 +++
