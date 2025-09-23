@@ -10,5 +10,3 @@ articles = [
     "article/maintainer_fund_contact",
 ]
 +++
-
-Test
