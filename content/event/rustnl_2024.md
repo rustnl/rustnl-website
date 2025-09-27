@@ -1,5 +1,6 @@
 +++
 title = "RustNL 2024"
+render = false
 [extra]
 image = "/images/rustnl2024-header2.png"
 link = "https://2024.rustnl.org/"

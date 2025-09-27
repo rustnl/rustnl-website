@@ -4,16 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RustNL - Stichting Rust Nederland</title>
+
+  {% block meta_content %}
+  {% if page.title -%}
+    <title>{{page.title}} - RustNL</title>
+  {% elif section.title -%}
+    <title>{{section.title}} - RustNL</title>
+  {% else -%}
+    <title>RustNL - Stichting Rust Nederland</title>
+  {% endif -%}
+
+  {% if page.extra and page.extra.image -%}
+    {% set imageUrl = get_url(path=page.extra.image) %}
+    <meta name="image" property="og:image" content="{{imageUrl | safe}}">
+  {% else -%}
+    <meta property="og:image" content="https://rustnl.org/images/logo-landscape-large.png">
+  {% endif -%}
+
+  {% endblock meta_content %}
+
   <meta name="description" content="RustNL - Stichting Rust Nederland">
   <link rel="icon" href="/images/svg/logo-square.svg" type="image/svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-  <meta property="og:url" content="https://rustnl.org/">
-  <meta property="og:title" content="RustNL - Stichting Rust Nederland">
-  <meta property="og:description" content="RustNL - Stichting Rust Nederland">
-  <meta property="og:image" content="https://rustnl.org/images/logo-landscape-large.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap" rel="stylesheet">
@@ -31,9 +46,11 @@
   <div class="header container"> <a class="logo" href="/"> <img src="/images/svg/logo.svg" alt="Logo RustNL"> </a>
     <div class="hamburger button button-primary" data-menu-toggle></div>
       <div class="menu" data-menu>
-        <a href="#contact" onclick="menu_toggle()">Contact</a>
-        <a href="#board" onclick="menu_toggle()">Board</a> 
-        <a href="#join" onclick="menu_toggle()">Join us</a>
+        <a href="/about">About</a>
+        <a href="/fund">Fund</a>
+        <a href="/events">Events</a> 
+        <a href="/#join" onclick="menu_toggle()">Join us</a>
+        <a href="/about#contact" onclick="menu_toggle()">Contact</a>
         <a href="https://2026.rustweek.org/" class="button">RustWeek 2026</a>
       </div>
     <div class="overlay" data-menu-overlay></div>
@@ -46,7 +63,13 @@
     </script>
   </div>
   <section class="hero page">
+    {% if page.title -%}
+    <h1 class="text-3xl">{{page.title}}</h1>
+    {% elif section.title -%}
+    <h1 class="text-3xl">{{section.title}}</h1>
+    {% else -%}
     <h1 class="text-3xl">RustNL</h1>
+    {% endif -%}
   </section>
   {% block content %}{% endblock content %}
   <footer class="footer">

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% set article = get_page(path="./article/about_intro.md") %}
+  {% set key = "about" %}
+  {% include "section.html" %}
+  {% include "partials/members.html" %}
+  {% include "partials/organizers.html" %}
+  {% include "partials/contact.html" %}
+{% endblock content %}

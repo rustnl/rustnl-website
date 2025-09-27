@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% for key in page.extra.articles %}
+    {% set article = get_page(path="./" ~ key ~ ".md") %}
+    {% include "section.html" %}
+  {% endfor %}
+
+  {% if page.extra.events %}
+    {% for key in page.extra.events %}
+      {% set event = get_page(path="./" ~ key ~ ".md") %}
+      {% include "event.html" %}
+    {% endfor %}
+  {% endif %}
+{% endblock content %}
