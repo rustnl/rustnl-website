@@ -1,5 +1,5 @@
 +++
-title = "Rust Maintainer Fund"
+title = "Rust Maintainers Fund"
 template = "page.html"
 slug = "fund"
 
