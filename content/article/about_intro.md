@@ -18,6 +18,6 @@ We're an Associate Member of the [Rust Foundation](https://foundation.rust-lang.
 
 <p>
     <a href="https://foundation.rust-lang.org/">
-        <img src="/images/rf-logo-transparent.png" style="display: block;margin: 2rem auto;max-width:100%"/>
+        <img src="/images/rf-logo-transparent.png" style="display: block;margin: 2rem auto;max-width:16rem;"/>
     </a>
 </p>
