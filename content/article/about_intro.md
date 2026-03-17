@@ -15,9 +15,3 @@ We're the organizer of [*RustWeek*](https://rustweek.org/), the week-long event 
 RustNL is short for Stichting Rust Nederland, a Dutch foundation led by our [board](/about#board). You can find our details in the [contact](/about#contact) section.
 
 We're an Associate Member of the [Rust Foundation](https://foundation.rust-lang.org/).
-
-<p>
-    <a href="https://foundation.rust-lang.org/">
-        <img src="/images/rf-logo-transparent.png" style="display: block;margin: 2rem auto;max-width:16rem;"/>
-    </a>
-</p>
