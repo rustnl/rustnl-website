@@ -171,7 +171,7 @@ header .logo {
 
 header menu {
   display: flex;
-  margin-top: 0;
+  margin-top: -1rem;
   margin-bottom: 0;
   align-items: flex-start;
   background-color: var(--color-neutral-400);
@@ -179,7 +179,6 @@ header menu {
   flex-direction: column;
   left: 1rem;
   right: 1rem;
-  bottom: 0.75rem;
   opacity: 0;
   padding: 1rem;
   position: absolute;
@@ -195,12 +194,12 @@ header menu {
   header menu {
     align-self: center;
     box-sizing: border-box;
+    margin-top: 0;
     align-items: center;
     background-color: transparent;
     position: static;
     float: right;
     border: none;
-    bottom: auto;
     left: auto;
     flex-direction: row;
     gap: 1.5rem;
