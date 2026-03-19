@@ -444,7 +444,7 @@ section > h3 {
 .person h4 {
   margin: 0;
   font-weight: 700;
-  font-size: var(--font-size-lg);
+  font-size: calc(0.9 * var(--font-size-lg));
   line-height: 1.1;
 }
 
