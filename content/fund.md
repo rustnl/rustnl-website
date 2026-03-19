@@ -1,12 +1,11 @@
 +++
-title = "Rust Maintainers Fund"
+title = "Funding"
 template = "page.html"
 slug = "fund"
 
 [extra]
-
 articles = [
-    "article/maintainer_fund_intro",
-    "article/maintainer_fund_contact",
+    "article/fund_intro",
+    "article/fund_contact",
 ]
 +++
