@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-  
   {% if section.extra.articles %}
   {% for key in section.extra.articles %}
     {% set article = get_page(path="./" ~ key ~ ".md") %}
