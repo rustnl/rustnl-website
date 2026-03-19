@@ -1,12 +1,12 @@
 +++
-title = "RustNL"
+title = "Stichting Rust Nederland"
 render = false
 
 [extra]
 moreLink = "about"
 +++
 
-RustNL is a non-profit that strives to promote the Rust programming language and support Rust's maintainers.
+**RustNL** is a non-profit that strives to promote the Rust programming language and support Rust's maintainers.
 
 We're the organizer of [*RustWeek*](https://rustweek.org/), the week-long event for the Rust Community, the Rust Project and professional Rust users.
 

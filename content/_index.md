@@ -1,5 +1,5 @@
 +++
-title = "Home"
+title = "RustNL"
 template = "index.html"
 
 [extra]
