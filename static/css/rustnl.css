@@ -408,14 +408,16 @@ section > h3 {
 
 .people {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
   grid-column-start: 1;
   grid-column-end: 13;
 }
 
 @media (min-width: 48rem) {
   .people {
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
     grid-column-start: 2;
     grid-column-end: 12;
   }
