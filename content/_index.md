@@ -6,7 +6,7 @@ template = "index.html"
 
 articles = [
     "article/about_intro",
-    "article/event_intro", 
-    "article/maintainer_fund_intro",
+    "article/event_intro",
+    "article/maintainer_team_intro",
 ]
 +++
