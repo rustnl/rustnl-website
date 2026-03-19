@@ -1,10 +1,9 @@
-<section class="container md:grid md:cols-12 py-12 article-container">
-  <div class="text-lg md:col-start-3 md:col-end-11 xl:col-start-4 xl:col-end-10 article" id="{{ key }}">
-    <div class="markdown">
-      <h2 class="text-2xl space-y-6">{{ article.title }}</h2>
-      {{ article.summary | safe }}
+<section>
+  <article id="{{ key }}">
+    <h2>{{ article.title }}</h2>
 
-      <a class="button" href="{{ article.extra.moreLink }}">Read more</a>
-    </div>
-  </div>
+    {{ article.summary | safe }}
+
+    <p><a class="button" href="{{ article.extra.moreLink }}">Read more</a></p>
+  </article>
 </section>
