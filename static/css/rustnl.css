@@ -70,7 +70,7 @@ h2 {
   font-size: var(--font-size-2xl);
 }
 
-p {
+article {
   font-size: var(--font-size-lg);
 }
 
@@ -84,7 +84,6 @@ body {
   background-color: var(--color-neutral-400);
   font-family: var(--font-family);
   font-size: var(--font-size-md);
-  font-weight: 300;
   line-height: var(--line-height-normal);
 }
 
