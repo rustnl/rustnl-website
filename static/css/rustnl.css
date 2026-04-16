@@ -508,3 +508,7 @@ p + .people {
   font-style: italic;
 }
 
+.person .tags span.sponsored a {
+  text-decoration: none;
+  color: inherit;
+}
