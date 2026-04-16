@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% set article = get_page(path="./article/maintainer_team_intro.md") %}
+  {% set key = "maintainers" %}
+  {% include "section.html" %}
+  {% include "partials/maintainers.html" %}
+  {% set article = get_page(path="./article/maintainer_team_contact.md") %}
+  {% include "section.html" %}
+{% endblock content %}

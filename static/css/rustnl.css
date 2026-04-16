@@ -46,28 +46,35 @@ section {
   }
 }
 
-section > article {
+section > p {
+  font-size: var(--font-size-lg);
+}
+
+section > article,
+section > p {
   margin-block-start: 0;
   grid-column-start: 1;
   grid-column-end: 13;
 }
 
 @media (min-width: 48rem) {
-  section > article {
+  section > article,
+  section > p {
     grid-column-start: 3;
     grid-column-end: 11;
   }
 }
 
 @media (min-width: 74rem) {
-  section > article {
+  section > article,
+  section > p {
     grid-column-start: 4;
     grid-column-end: 10;
   }
 }
 
 h2 {
-  font-size: var(--font-size-2xl);
+  font-size: calc(0.90 * var(--font-size-2xl));
 }
 
 article {
@@ -398,11 +405,22 @@ a.button {
   vertical-align: middle;
 }
 
+section > h2 {
+  text-align: center;
+  grid-column-start: 4;
+  grid-column-end: 10;
+  font-size: var(--font-size-2xl);
+}
+
 section > h3 {
   text-align: center;
   grid-column-start: 4;
   grid-column-end: 10;
   font-size: var(--font-size-xl);
+}
+
+p + .people {
+  margin-top: 2em;
 }
 
 .people {
@@ -436,14 +454,16 @@ section > h3 {
 
 .person p {
   text-align: left;
-  margin: 0;
+  margin: 5px 0;
   font-size: var(--font-size-md);
 }
 
 .person h4 {
   margin: 0;
+  margin-top: 4px;
+  margin-bottom: 6px;
   font-weight: 700;
-  font-size: calc(0.9 * var(--font-size-lg));
+  font-size: var(--font-size-lg);
   line-height: 1.1;
 }
 
@@ -453,14 +473,20 @@ section > h3 {
   width: 100%;
   height: auto;
   border-radius: 10%;
+  border: 1px solid var(--color-neutral-500);
+}
+
+.person .tags {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
 }
 
 .person .tags span {
   background: var(--color-yellow-400);
-  white-space: nowrap;
   border-radius: 5px;
-  padding: 1px 4px;
-  margin: 1px 2px;
+  padding: 2px 7px;
 }
 
 .person .tags span.fulltime {
@@ -468,7 +494,17 @@ section > h3 {
   color: white;
 }
 
-.person .tags span.sponsored {
-  background: var(--color-yellow-400);
+.person .tags span.intern {
+  background: var(--color-blue-400);
+  color: white;
+}
+
+.person .tags span.sponsored,
+.person .tags span.employed {
+  background: none;
+  padding: 0;
+  padding-left: 4px;
+  color: var(--color-yellow-500);
+  font-style: italic;
 }
 
