@@ -470,6 +470,7 @@ p + .people {
 .person img {
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: top;
   width: 100%;
   height: auto;
   border-radius: 10%;
