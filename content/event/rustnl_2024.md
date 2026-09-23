@@ -7,4 +7,4 @@ link = "https://2024.rustnl.org/"
 +++
 
 Look back at the RustNL 2024 conference?
-Go here: [2024.rustnl.org](https://2024.rustnl.org/)
+Go here: [2024.rustnl.org](https://2024.rustnl.org/) or watch the talk videos in our [playlists on YouTube](https://www.youtube.com/@rustnederlandrustnl/playlists).

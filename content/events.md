@@ -10,6 +10,7 @@ articles = [
 ]
 
 events = [
+    "event/rustweek_2027",
     "event/rustweek_2026",
     "event/rustweek_2025",
     "event/rustnl_2024",
