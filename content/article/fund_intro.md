@@ -7,8 +7,8 @@ Want to support our efforts?
 
 You can help us by:
 
-- Becoming a [sponsor of RustWeek](https://2026.rustweek.org/#sponsors),
+- Sponsoring [our Rust Maintainers Team](https://github.com/sponsors/rustnl),
 
-- Donating to [NLnet Foundation's Rust Maintainers Fund](https://nlnet.nl/maintainers/rust/), or
+- Becoming a [sponsor of RustWeek](https://2026.rustweek.org/#sponsors), or
 
-- Sponsoring [our Rust Maintainers Team](/maintainers).
+- Donating to [NLnet Foundation's Rust Maintainers Fund](https://nlnet.nl/maintainers/rust/).

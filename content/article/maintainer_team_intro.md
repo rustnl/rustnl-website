@@ -14,6 +14,8 @@ including the compiler, standard library, tools, and more.
 Maintenance is the groundwork that is crucial for Rust’s sustainability, its pace of development, and to attract new contributors.
 
 We are looking for organizations interested in supporting Rust maintenance.
-Contact [Mara](mailto:mara@rustnl.org) or [Erik](mailto:erik@rustnl.org) for details.
+Contact [Mara](mailto:mara@rustnl.org) or [Erik](mailto:erik@rustnl.org) for details on how to support our team.
+
+You can also sponsor us through GitHub sponsors: <https://github.com/sponsors/rustnl>
 
 <!--Check our **[sponsor prospectus](/resources/Rust-Maintainers-Team.pdf)** for details.-->
