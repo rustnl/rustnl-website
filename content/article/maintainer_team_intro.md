@@ -16,6 +16,10 @@ Maintenance is the groundwork that is crucial for Rust’s sustainability, its p
 We are looking for organizations interested in supporting Rust maintenance.
 Contact [Mara](mailto:mara@rustnl.org) or [Erik](mailto:erik@rustnl.org) for details on how to support our team.
 
-You can also sponsor us through GitHub sponsors: <https://github.com/sponsors/rustnl>
+For small donations, you can sponsor us through GitHub Sponsors, iDeal|Wero, or wire transfer:
+
+<p style="text-align: center;">
+<a style="font-size: 120%; margin-right: 1em" class="button" href="https://github.com/sponsors/rustnl">Sponsor us</a>
+</p>
 
 <!--Check our **[sponsor prospectus](/resources/Rust-Maintainers-Team.pdf)** for details.-->
