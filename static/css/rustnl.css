@@ -425,6 +425,10 @@ p + .people {
   margin-top: 2em;
 }
 
+section > h3.partner {
+  font-size: var(--font-size-lg);
+}
+
 .people {
   display: grid;
   gap: 0.5rem;
@@ -447,6 +451,13 @@ p + .people {
     grid-column-start: 3;
     grid-column-end: 11;
   }
+}
+
+.more-interns {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 .person {

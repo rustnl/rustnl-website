@@ -6,8 +6,7 @@ render = false
 moreLink = "maintainers"
 +++
 
-RustNL's new Rust Maintainers Team helps maintain the [Rust Programming Language](https://github.com/rust-lang/rust),
-including the compiler, standard library, tools, and more.
+RustNL's Rust Maintainers Team helps maintain the [Rust Programming Language](https://github.com/rust-lang/rust), including the compiler, standard library, tools, and more.
 
 <!-- more -->
 
