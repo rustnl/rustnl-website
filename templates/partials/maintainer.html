@@ -1,7 +1,16 @@
-{% macro person(name, image, role, description, alt="", sponsor_name="", sponsor_url="") %}
+{% macro person(
+  name,
+  image,
+  role,
+  description,
+  sponsor_name="",
+  sponsor_url="",
+  employer_name="",
+  employer_url=""
+) %}
     <div class="person">
       <div>
-        <img src="{{ image | safe }}" alt="{{ alt }}">
+        <img src="{{ image | safe }}">
         <h4>{{ name }}</h4>
         <p class="tags">
           {%- if role == "fulltime" %}
@@ -13,6 +22,9 @@
           {%- endif %}
           {%- if sponsor_name %}
           <span class="sponsored">Sponsored by <a href="{{ sponsor_url | safe }}">{{ sponsor_name }}</a></span>
+          {%- endif %}
+          {%- if employer_name %}
+          <span class="sponsored">Employed by <a href="{{ employer_url | safe }}">{{ employer_name }}</a></span>
           {%- endif %}
         </p>
         <p>
