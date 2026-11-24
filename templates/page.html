@@ -25,23 +25,17 @@
   <header>
     <nav>
       <a class="logo" href="/"><img src="/images/svg/logo.svg" alt="RustNL"></a>
-      <button class="hamburger button" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
-      <menu id="navigation">
+      <details class="menu-toggle">
+        <summary class="button" aria-controls="navigation"><span>Menu</span><span>Close</span></summary>
+      </details>
+      <div id="navigation">
         <a href="/events">Events</a>
         <a href="/maintainers">Rust Maintainers Team</a>
         <a href="/fund">Support us</a>
         <a href="/about">About</a>
         <a href="https://2027.rustweek.org/" class="button">RustWeek 2027</a>
-      </menu>
+      </div>
       <div class="overlay"></div>
-      <script type="module">
-        const toggle = document.querySelector(".hamburger");
-        toggle.addEventListener("click", () => {
-          const open = toggle.getAttribute("aria-expanded") === "false";
-          toggle.setAttribute("aria-expanded", String(open));
-          toggle.textContent = open ? "Close" : "Menu";
-        });
-      </script>
     </nav>
     <h1>{{ entry.title or "RustNL" }}</h1>
   </header>

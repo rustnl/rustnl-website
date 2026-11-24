@@ -138,7 +138,7 @@ header .logo {
   align-self: center;
 }
 
-header menu {
+#navigation {
   display: flex;
   margin-top: -1rem;
   margin-bottom: 0;
@@ -160,7 +160,7 @@ header menu {
 }
 
 @media (min-width: 64rem) {
-  header menu {
+  #navigation {
     align-self: center;
     box-sizing: border-box;
     margin-top: 0;
@@ -187,28 +187,32 @@ header .logo img {
   vertical-align: middle;
 }
 
-header .hamburger {
+.menu-toggle {
   margin-inline-start: auto;
-  border: 0;
-  padding-block: 0;
-  font-family: inherit;
-  line-height: inherit;
-  color: inherit;
+}
+
+.menu-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu-toggle[open] summary span:first-child,
+.menu-toggle:not([open]) summary span:last-child {
+  display: none;
 }
 
 @media (min-width: 64rem) {
-  header .hamburger {
+  .menu-toggle {
     display: none;
   }
 }
 
-.hamburger[aria-expanded="true"] ~ menu {
+.menu-toggle[open] + #navigation {
   opacity: 1;
   transform: scaleY(1);
   visibility: visible;
 }
 
-header menu a:not(.button) {
+#navigation a:not(.button) {
   align-items: center;
   color: inherit;
   display: flex;
@@ -219,17 +223,17 @@ header menu a:not(.button) {
 }
 
 @media (min-width: 64rem) {
-  header menu a:not(.button) {
+  #navigation a:not(.button) {
     width: auto;
   }
 }
 
-header menu a:last-child {
+#navigation a:last-child {
   margin-block-start: 0.75rem;
 }
 
 @media (min-width: 64rem) {
-  header menu a:last-child {
+  #navigation a:last-child {
     margin-block-start: 0;
   }
 }
@@ -253,7 +257,7 @@ header .overlay {
   }
 }
 
-.hamburger[aria-expanded="true"] ~ .overlay {
+.menu-toggle[open] ~ .overlay {
   visibility: visible;
   opacity: 0.75;
   pointer-events: all;
