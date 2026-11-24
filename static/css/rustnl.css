@@ -412,6 +412,7 @@ section > h2 {
   grid-column-start: 4;
   grid-column-end: 10;
   font-size: var(--font-size-2xl);
+  margin-bottom: 0.6em;
 }
 
 section > h3 {
@@ -419,14 +420,12 @@ section > h3 {
   grid-column-start: 4;
   grid-column-end: 10;
   font-size: var(--font-size-xl);
+  margin-top: 1.4em;
+  margin-bottom: 0.6em;
 }
 
 p + .people {
-  margin-top: 2em;
-}
-
-section > h3.partner {
-  font-size: var(--font-size-lg);
+  margin-top: 0.6em;
 }
 
 .people {
