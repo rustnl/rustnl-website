@@ -1,17 +1,16 @@
+{% set entry = page or section -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% if page.title -%}
-    <title>{{page.title}} - RustNL</title>
-  {% elif section.title -%}
-    <title>{{section.title}} - RustNL</title>
+  {% if entry.title -%}
+    <title>{{ entry.title }} - RustNL</title>
   {% else -%}
     <title>RustNL - Stichting Rust Nederland</title>
   {% endif -%}
-  {% if page.extra and page.extra.image -%}
-    {% set imageUrl = get_url(path=page.extra.image) %}
+  {% if entry.extra.image -%}
+    {% set imageUrl = get_url(path=entry.extra.image) %}
     <meta name="image" property="og:image" content="{{imageUrl | safe}}">
   {% else -%}
     <meta property="og:image" content="https://rustnl.org/images/logo-landscape-large.png">
@@ -54,28 +53,18 @@
         }
       </script>
     </nav>
-    {% if page.title -%}
-    <h1 class="text-3xl">{{page.title}}</h1>
-    {% elif section.title -%}
-    <h1 class="text-3xl">{{section.title}}</h1>
-    {% else -%}
-    <h1 class="text-3xl">RustNL</h1>
-    {% endif -%}
+    <h1 class="text-3xl">{{ entry.title or "RustNL" }}</h1>
   </header>
-  <main{% if page %} id="{{ page.slug }}"{% endif %}>
-    {% if page %}
-      {{ page.content | safe }}
-    {% else %}
-      {% for path in section.extra.featured | default(value=[]) %}
-        {% set featured_page = get_page(path=path) %}
-        <article id="{{ featured_page.slug }}">
-          {{ featured_page.summary | safe }}
-          <p><a class="button" href="{{ featured_page.path }}">Read more</a></p>
-        </article>
-        <hr>
-      {% endfor %}
-      {{ section.content | safe }}
-    {% endif %}
+  <main id="{{ entry.slug or "home" }}">
+    {% for path in entry.extra.featured | default(value=[]) %}
+      {% set featured_page = get_page(path=path) %}
+      <article id="{{ featured_page.slug }}">
+        {{ featured_page.summary | safe }}
+        <p><a class="button" href="{{ featured_page.path }}">Read more</a></p>
+      </article>
+      <hr>
+    {% endfor %}
+    {{ entry.content | safe }}
     <hr>
   </main>
   <footer>

@@ -14,7 +14,7 @@ You can help us by:
 
 - Donating to [NLnet Foundation's Rust Maintainers Fund](https://nlnet.nl/maintainers/rust/).
 
-{{ sponsor_button() }}
+{{ <sponsor_button /> }}
 
 ---
 

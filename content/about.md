@@ -32,18 +32,18 @@ Company Reg. No.: 76457761 (NL)<br />
 
 ### Volunteer board members {#board}
 
-- {{ person(id="erik", description="Chair") }}
-- {{ person(id="mara", description="Treasurer") }}
-- {{ person(id="wouter", description="Secretary") }}
+- {{ <person id="erik" description="Chair" /> }}
+- {{ <person id="mara" description="Treasurer" /> }}
+- {{ <person id="wouter" description="Secretary" /> }}
 
 ### Employees
 
-- {{ person(id="oli", description="Full-time Rust maintainer") }}
-- {{ person(id="waffle", description="Full-time Rust maintainer") }}
-- {{ person(id="jonathan", description="Full-time Rust maintainer") }}
+- {{ <person id="oli" description="Full-time Rust maintainer" /> }}
+- {{ <person id="waffle" description="Full-time Rust maintainer" /> }}
+- {{ <person id="jonathan" description="Full-time Rust maintainer" /> }}
 
 ### Volunteer event organizers {#organizers}
 
-- {{ person(id="laura", description="RustWeek co-organizer") }}
-- {{ person(id="jana", description="RustWeek co-organizer") }}
-- {{ person(id="terts", description="RustWeek co-organizer") }}
+- {{ <person id="laura" description="RustWeek co-organizer" /> }}
+- {{ <person id="jana" description="RustWeek co-organizer" /> }}
+- {{ <person id="terts" description="RustWeek co-organizer" /> }}
