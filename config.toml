@@ -1,11 +1,1 @@
-# The URL the site will be built for
 base_url = "https://rustnl.org/"
-
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
-
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
-
-[extra]
-# Put all your custom variables here
