@@ -1,1 +1,2 @@
 base_url = "https://rustnl.org/"
+skip_content_templating = [] # This site requires Zola 0.23 or newer.
