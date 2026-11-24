@@ -20,31 +20,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Source+Code+Pro:wght@300&amp;family=Work+Sans:wght@300;700&amp;display=swap">
   <link rel="stylesheet" href="/css/rustnl.css" />
-  <script type="module">const e = document.querySelector("[data-menu-toggle]"), t = document.querySelector("[data-menu]"), o = document.querySelector("[data-menu-overlay]"); function n() { t?.classList.toggle("open"), o?.classList.toggle("open"), e?.classList.toggle("open") } e?.addEventListener("click", n);</script>
 </head>
 <body>
   <header>
     <nav>
       <a class="logo" href="/"><img src="/images/svg/logo.svg" alt="RustNL"></a>
-      <div class="hamburger button" data-menu-toggle></div>
-      <menu data-menu>
-          <a href="/events">Events</a>
-          <a href="/maintainers">Rust Maintainers Team</a>
-          <a href="/fund">Support us</a>
-          <a href="/about">About</a>
-          <!--<a href="/about#contact" onclick="menu_toggle()">Contact</a>-->
-          <a href="https://2027.rustweek.org/" class="button">RustWeek 2027</a>
-        </menu>
-      <div class="overlay" data-menu-overlay></div>
-      <script>
-        function menu_toggle() {
-          document.querySelector("[data-menu]")?.classList.toggle("open");
-          document.querySelector("[data-menu-overlay]")?.classList.toggle("open");
-          document.querySelector("[data-menu-toggle]")?.classList.toggle("open");
-        }
+      <button class="hamburger button" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      <menu id="navigation">
+        <a href="/events">Events</a>
+        <a href="/maintainers">Rust Maintainers Team</a>
+        <a href="/fund">Support us</a>
+        <a href="/about">About</a>
+        <a href="https://2027.rustweek.org/" class="button">RustWeek 2027</a>
+      </menu>
+      <div class="overlay"></div>
+      <script type="module">
+        const toggle = document.querySelector(".hamburger");
+        toggle.addEventListener("click", () => {
+          const open = toggle.getAttribute("aria-expanded") === "false";
+          toggle.setAttribute("aria-expanded", String(open));
+          toggle.textContent = open ? "Close" : "Menu";
+        });
       </script>
     </nav>
-    <h1 class="text-3xl">{{ entry.title or "RustNL" }}</h1>
+    <h1>{{ entry.title or "RustNL" }}</h1>
   </header>
   <main id="{{ entry.slug or "home" }}">
     {% for path in entry.extra.featured | default(value=[]) %}

@@ -16,7 +16,6 @@
   --font-size-2xl: calc(var(--font-size-xl) * var(--font-size-scale));
   --font-size-3xl: calc(var(--font-size-2xl) * var(--font-size-scale));
   --line-height-normal: 1.5;
-  --line-height-tight: 1.125;
 }
 
 @media (min-width: 75rem) {
@@ -91,10 +90,6 @@ h1, h2, h3 {
   justify-content: center;
 }
 
-.button-group-center {
-  justify-content: center;
-}
-
 .button {
   align-items: center;
   border-radius: 0.25rem;
@@ -112,27 +107,6 @@ h1, h2, h3 {
 
 .button-large {
   font-size: 1.2em;
-}
-
-.down-arrow {
-  aspect-ratio: 1;
-  border: solid var(--color-red-400);
-  border-width: 0 1.5rem 1.5rem 0;
-  display: inline-block;
-  rotate: 0deg;
-  animation: MoveUpDown 2s ease-in-out infinite;
-  rotate: 45deg;
-  width: 72px;
-}
-
-@keyframes MoveUpDown {
-  0%,
-  to {
-    translate: 0 0;
-  }
-  50% {
-    translate: 0 0.4em;
-  }
 }
 
 header {
@@ -215,6 +189,11 @@ header .logo img {
 
 header .hamburger {
   margin-inline-start: auto;
+  border: 0;
+  padding-block: 0;
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
 }
 
 @media (min-width: 64rem) {
@@ -223,15 +202,7 @@ header .hamburger {
   }
 }
 
-header .hamburger:before {
-  content: "Menu";
-}
-
-header .hamburger.open:before {
-  content: "Close";
-}
-
-header menu.open {
+.hamburger[aria-expanded="true"] ~ menu {
   opacity: 1;
   transform: scaleY(1);
   visibility: visible;
@@ -282,7 +253,7 @@ header .overlay {
   }
 }
 
-header .overlay.open {
+.hamburger[aria-expanded="true"] ~ .overlay {
   visibility: visible;
   opacity: 0.75;
   pointer-events: all;
@@ -307,29 +278,6 @@ header::after {
   header h1 {
     padding: 3rem;
   }
-}
-
-@media (min-width: 75rem) {
-  header h1 {
-    padding: 3rem;
-  }
-}
-
-.hero img {
-  height: auto;
-  max-width: 100%;
-}
-
-.hero .nav {
-  display: flex;
-  justify-content: space-between;
-  flex: 1;
-  width: 100%;
-  align-items: center;
-}
-
-.hero.page img {
-  max-height: 3rem;
 }
 
 main hr {
@@ -373,10 +321,6 @@ footer menu {
   gap: 1rem;
   list-style: none;
   padding: 0;
-}
-
-footer menu:first-of-type,
-footer menu:nth-of-type(2) {
   border-block-end: 1px solid var(--color-red-500);
   margin-block-end: 0.75rem;
   padding-block-end: 0.75rem;
@@ -387,7 +331,6 @@ footer menu a {
 }
 
 a.button {
-  background-color: #e74310;
   color: white;
   vertical-align: middle;
   border-right: 1px solid black;
@@ -526,8 +469,7 @@ li:has(> .person) {
   color: white;
 }
 
-.person .tags span.sponsored,
-.person .tags span.employed {
+.person .tags span.sponsored {
   background: none;
   padding: 0;
   padding-left: 4px;
