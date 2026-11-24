@@ -186,7 +186,8 @@ header .logo img {
   margin-block-start: 0.75rem;
 }
 
-header .overlay {
+.site-menu[open]::before {
+  content: "";
   background-color: var(--color-yellow-500);
   inset: 0;
   opacity: 0.75;
@@ -194,13 +195,9 @@ header .overlay {
   z-index: -1;
 }
 
-.site-menu:not([open]) + .overlay {
-  display: none;
-}
-
 @media (min-width: 64rem) {
   @supports selector(::details-content) {
-    .site-menu summary, header .overlay {
+    .site-menu summary, .site-menu::before {
       display: none;
     }
 
