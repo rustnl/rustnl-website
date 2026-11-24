@@ -25,16 +25,16 @@
   <header>
     <nav>
       <a class="logo" href="/"><img src="/images/svg/logo.svg" alt="RustNL"></a>
-      <details class="menu-toggle">
-        <summary class="button" aria-controls="navigation"><span>Menu</span><span>Close</span></summary>
+      <details class="site-menu">
+        <summary class="button"><span>Menu</span><span>Close</span></summary>
+        <div class="nav-links">
+          <a href="/events">Events</a>
+          <a href="/maintainers">Rust Maintainers Team</a>
+          <a href="/fund">Support us</a>
+          <a href="/about">About</a>
+          <a href="https://2027.rustweek.org/" class="button">RustWeek 2027</a>
+        </div>
       </details>
-      <div id="navigation">
-        <a href="/events">Events</a>
-        <a href="/maintainers">Rust Maintainers Team</a>
-        <a href="/fund">Support us</a>
-        <a href="/about">About</a>
-        <a href="https://2027.rustweek.org/" class="button">RustWeek 2027</a>
-      </div>
       <div class="overlay"></div>
     </nav>
     <h1>{{ entry.title or "RustNL" }}</h1>
