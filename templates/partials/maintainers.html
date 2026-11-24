@@ -12,11 +12,11 @@
   </p>
   <h3 id="staff">Staff Maintainers</h3>
   <div class="people">
-    {{ maintainer::person(name="Oli Scherer", github="oli-obk", image="/images/oli.jpg", role="fulltime",
+    {{ person::card(id="oli", role="fulltime",
       description="Member of the Rust Leadership Council, Compiler Team, Moderation team, and Types team. Lead of Miri, Constant Evaluation, and MIR optimizations.") }}
-    {{ maintainer::person(name="Waffle", github="WaffleLapkin", image="/images/waffle.jpg", role="fulltime",
+    {{ person::card(id="waffle", role="fulltime",
       description="Member of the Rust Compiler Team. Lead of the never type and explicit tail calls efforts.") }}
-    {{ maintainer::person(name="Jonathan Brouwer", github="JonathanBrouwer", image="https://github.com/JonathanBrouwer.png", role="fulltime",
+    {{ person::card(id="jonathan", role="fulltime",
       description="Member of the Rust Compiler Team. Working on performance, attributes, and general maintenance.") }}
   </div>
   <h3 id="partners">Partner Maintainers</h3>
@@ -25,25 +25,25 @@
   <a href="https://trifectatech.org/">Trifecta Tech Foundation</a>
   we collaborate closely to share responsibility for maintaining Rust and mentoring new contributors.</p>
   <div class="people">
-    {{ maintainer::person(name="Jana Dönszelmann", github="jdonszelmann", image="/images/jana.jpg", role="fulltime",
+    {{ person::card(id="jana", role="fulltime",
       description="Member of the Rust Compiler Team and host of the weekly Compiler Team office hours.",
       employer_name="Hexcat", employer_url="https://hexcat.nl/") }}
-    {{ maintainer::person(name="Nia Deckers", github="nia-e", image="/images/nia.jpg", role="fulltime",
+    {{ person::card(id="nia", role="fulltime",
       description="Lead of the Rust Library Team.",
       employer_name="Hexcat", employer_url="https://hexcat.nl/") }}
-    {{ maintainer::person(name="Boxy", github="BoxyUwU", image="https://github.com/boxyUwU.png", role="fulltime",
+    {{ person::card(id="boxy", role="fulltime",
       description="Lead of the Rust Compiler Team. Member of the Rust Types team and Release team. Lead of Const Generics, Assumptions on Binders, and Rustc Dev Guide.",
       employer_name="Hexcat", employer_url="https://hexcat.nl/") }}
-    {{ maintainer::person(name="Ashley Hauck", github="khyperia", image="https://github.com/khyperia.png", role="fulltime",
+    {{ person::card(id="khyperia", role="fulltime",
       description="Member of the Rust Compiler Team and lead of the Const Generics Project Group.",
       employer_name="Hexcat", employer_url="https://hexcat.nl/") }}
-    {{ maintainer::person(name="Mara Bos", github="m-ou-se", image="/images/mara.jpg", role="parttime",
+    {{ person::card(id="mara", role="parttime",
       description="Member of the Rust Leadership Council, Compiler Team, Library Team, and organizer of the Rust All Hands.",
       employer_name="Hexcat", employer_url="https://hexcat.nl/") }}
-    {{ maintainer::person(name="Björn 3", github="bjorn3", image="/images/bjorn.png", role="parttime",
+    {{ person::card(id="bjorn", role="parttime",
       description="Member of the Rust Compiler Team, Parallel rustc working area, and ffi-unwind project group and author of the Cranelift based backend of rustc.",
       employer_name="Tweede Golf", employer_url="https://tweedegolf.nl/") }}
-    {{ maintainer::person(name="Folkert de Vries", github="folkertdev", image="/images/folkert.jpg", role="parttime",
+    {{ person::card(id="folkert", role="parttime",
       description="Member of the Rust Compiler Team and Library Team. Co-maintainer of <code>rust-lang/stdarch</code>.",
       employer_name="Trifecta Tech Foundation", employer_url="https://trifectatech.org/") }}
   </div>
@@ -51,21 +51,21 @@
   <p>Our maintainers mentor interns as they work on Rust, from speeding up the compiler
   to implementing new language features.</p>
   <div class="people">
-    {{ maintainer::person(name="Arya", github="bal-e", image="/images/arya.jpg", role="intern",
+    {{ person::card(id="arya", role="intern",
       sponsor_name="NLnet Labs", sponsor_url="https://nlnetlabs.nl/",
       description="Optimizing the compiler and exploring architectural changes for large long-term speedups.") }}
-    {{ maintainer::person(name="Yara Kleingeld", github="yara-blue", image="/images/yara.jpg", role="intern",
+    {{ person::card(id="yara", role="intern",
       description="Working on the design and implementation of reflection features in the Rust language and compiler.") }}
-    {{ maintainer::person(name="Tess", github="Tess4552", image="/images/tess.jpg", role="intern",
+    {{ person::card(id="tess", role="intern",
       description="Working on the design and implementation of reflection features in the Rust language and compiler.") }}
   </div>
   <div class="more-interns"><a href="/past-interns/">See all past RustNL interns</a></div>
   <h3 id="grantees">Grantees</h3>
   <p>Our grants give Rust contributors time to work on Rust maintenance alongside their jobs or studies.</p>
   <div class="people">
-    {{ maintainer::person(name="tiif", github="tiif", image="https://github.com/tiif.png", role="parttime",
+    {{ person::card(id="tiif", role="parttime",
       description="Member of the Rust Compiler Team and Formality Team. Working on borrow check formalization and fixes.") }}
-    {{ maintainer::person(name="Noah Lev", github="camelid", image="https://github.com/camelid.png", role="parttime",
+    {{ person::card(id="camelid", role="parttime",
       description="Rust Compiler and Rustdoc team member. Working on implementing experimental support in the Rust compiler for polymorphic code generation.") }}
   </div>
 </section>

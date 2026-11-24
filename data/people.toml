@@ -1,0 +1,115 @@
+[addie]
+name = "Addie"
+image = "/images/addie.jpg"
+pronouns = "she/her"
+github = "addiesh"
+
+[arya]
+name = "Arya"
+image = "/images/arya.jpg"
+pronouns = "she/her"
+github = "bal-e"
+
+[bjorn]
+name = "Björn 3"
+image = "/images/bjorn.png"
+pronouns = "he/him"
+github = "bjorn3"
+
+[boxy]
+name = "Boxy"
+image = "https://github.com/boxyUwU.png"
+pronouns = ""
+github = "BoxyUwU"
+
+[camelid]
+name = "Noah Lev"
+image = "https://github.com/camelid.png"
+pronouns = ""
+github = "camelid"
+
+[erik]
+name = "Erik Jonkers"
+image = "/images/erik.jpg"
+pronouns = "he/him"
+
+[folkert]
+name = "Folkert de Vries"
+image = "/images/folkert.jpg"
+pronouns = "he/him"
+github = "folkertdev"
+
+[jana]
+name = "Jana Dönszelmann"
+image = "/images/jana.jpg"
+pronouns = "she/her"
+github = "jdonszelmann"
+
+[jonathan]
+name = "Jonathan Brouwer"
+image = "https://github.com/JonathanBrouwer.png"
+pronouns = "they/them"
+github = "JonathanBrouwer"
+
+[khyperia]
+name = "Ashley Hauck"
+image = "https://github.com/khyperia.png"
+pronouns = "she/her"
+github = "khyperia"
+
+[laura]
+name = "Laura Pircalaboiu"
+image = "/images/laura.jpg"
+pronouns = "she/her"
+
+[mara]
+name = "Mara Bos"
+image = "/images/mara.jpg"
+pronouns = "she/her"
+github = "m-ou-se"
+
+[nia]
+name = "Nia Deckers"
+image = "/images/nia.jpg"
+pronouns = "she/her"
+github = "nia-e"
+
+[oli]
+name = "Oli Scherer"
+image = "/images/oli.jpg"
+pronouns = "he/they"
+github = "oli-obk"
+
+[terts]
+name = "Terts Diepraam"
+image = "/images/terts.jpg"
+pronouns = "he/him"
+
+[tess]
+name = "Tess Hobbes"
+image = "/images/tess.jpg"
+pronouns = "she/her"
+github = "Tess4552"
+
+[tiif]
+name = "tiif"
+image = "https://github.com/tiif.png"
+pronouns = "she/they"
+github = "tiif"
+
+[waffle]
+name = "Waffle"
+image = "/images/waffle.jpg"
+pronouns = "it/its"
+github = "WaffleLapkin"
+
+[wouter]
+name = "Wouter Geraedts"
+image = "/images/wouter.jpg"
+pronouns = "he/him"
+
+[yara]
+name = "Yara Kleingeld"
+image = "/images/yara.jpg"
+pronouns = "she/her"
+github = "yara-blue"

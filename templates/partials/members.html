@@ -1,32 +1,8 @@
 <section>
   <h3 id="board">Volunteer board members</h3>
   <div class="people">
-    <div class="person">
-      <div>
-        <img src="/images/erik.jpg" alt="">
-        <div>
-          <h4>Erik Jonkers</h4>
-          <p>Chair</p>
-        </div>
-      </div>
-    </div>
-    <div class="person">
-      <div>
-        <img src="/images/mara.jpg" alt="">
-        <div>
-          <h4>Mara Bos</h4>
-          <p>Treasurer</p>
-        </div>
-      </div>
-    </div>
-    <div class="person">
-      <div>
-        <img src="/images/wouter.jpg" alt="">
-        <div>
-          <h4>Wouter Geraedts</h4>
-          <p>Secretary</p>
-        </div>
-      </div>
-    </div>
+    {{ person::card(id="erik", description="Chair") }}
+    {{ person::card(id="mara", description="Treasurer") }}
+    {{ person::card(id="wouter", description="Secretary") }}
   </div>
 </section>

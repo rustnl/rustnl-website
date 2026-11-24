@@ -1,32 +1,8 @@
 <section>
   <h3 id="maintainers">Employees</h3>
   <div class="people">
-    <div class="person">
-      <div>
-        <img src="/images/oli.jpg" alt="">
-        <h4>Oli Scherer</h4>
-        <p>
-        Full-time Rust maintainer
-        </p>
-      </div>
-    </div>
-    <div class="person">
-      <div>
-        <img src="/images/waffle.jpg" alt="">
-        <h4>Waffle</h4>
-        <p>
-        Full-time Rust maintainer
-        </p>
-      </div>
-    </div>
-    <div class="person">
-      <div>
-        <img src="https://github.com/JonathanBrouwer.png" alt="">
-        <h4>Jonathan Brouwer</h4>
-        <p>
-        Full-time Rust maintainer
-        </p>
-      </div>
-    </div>
+    {{ person::card(id="oli", description="Full-time Rust maintainer") }}
+    {{ person::card(id="waffle", description="Full-time Rust maintainer") }}
+    {{ person::card(id="jonathan", description="Full-time Rust maintainer") }}
   </div>
 </section>
