@@ -3,6 +3,7 @@
   image,
   role,
   description,
+  github="",
   sponsor_name="",
   sponsor_url="",
   employer_name="",
@@ -11,7 +12,7 @@
     <div class="person">
       <div>
         <img src="{{ image | safe }}">
-        <h4>{{ name }}</h4>
+        <h4>{% if github %}<a href="https://github.com/{{ github }}">{{ name }}</a>{% else %}{{ name }}{% endif %}</h4>
         <p class="tags">
           {%- if role == "fulltime" %}
           <span class="fulltime">Full-time Rust maintainer</span>

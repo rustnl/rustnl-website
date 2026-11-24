@@ -479,6 +479,11 @@ p + .people {
   line-height: 1.1;
 }
 
+.person h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .person img {
   aspect-ratio: 1 / 1;
   object-fit: cover;
