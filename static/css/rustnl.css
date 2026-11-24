@@ -158,11 +158,7 @@ header .logo img {
 }
 
 .site-menu::details-content {
-  transition: content-visibility 0.25s allow-discrete;
-}
-
-.nav-links {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
@@ -170,18 +166,13 @@ header .logo img {
   padding: 1rem;
   background-color: var(--color-neutral-400);
   border: 1px solid var(--color-red-500);
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: opacity 0.25s, transform 0.25s;
 }
 
-.site-menu[open] .nav-links {
-  opacity: 1;
-  transform: scaleY(1);
+.site-menu[open]::details-content {
+  display: flex;
 }
 
-.nav-links a:not(.button) {
+.site-menu > a:not(.button) {
   display: flex;
   align-items: center;
   min-height: 3rem;
@@ -191,36 +182,31 @@ header .logo img {
   text-decoration: none;
 }
 
-.nav-links a:last-child {
+.site-menu > a:last-child {
   margin-block-start: 0.75rem;
 }
 
 header .overlay {
   background-color: var(--color-yellow-500);
   inset: 0;
-  opacity: 0;
+  opacity: 0.75;
   position: fixed;
-  transition: opacity 0.25s, visibility 0.25s;
-  visibility: hidden;
   z-index: -1;
 }
 
-.site-menu[open] + .overlay {
-  opacity: 0.75;
-  visibility: visible;
+.site-menu:not([open]) + .overlay {
+  display: none;
 }
 
 @media (min-width: 64rem) {
   @supports selector(::details-content) {
-    .site-menu::details-content {
-      content-visibility: visible;
-    }
-
     .site-menu summary, header .overlay {
       display: none;
     }
 
-    .nav-links {
+    .site-menu::details-content {
+      display: flex;
+      content-visibility: visible;
       position: static;
       flex-direction: row;
       align-items: center;
@@ -228,15 +214,13 @@ header .overlay {
       padding: 0;
       background: none;
       border: 0;
-      opacity: 1;
-      transform: none;
     }
 
-    .nav-links a:not(.button) {
+    .site-menu > a:not(.button) {
       width: auto;
     }
 
-    .nav-links a:last-child {
+    .site-menu > a:last-child {
       margin-block-start: 0;
     }
   }
