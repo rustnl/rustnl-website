@@ -45,7 +45,7 @@ We also have a few grantees who are working with us on Rust maintenance next to 
 Together with our partners [Hexcat](https://hexcat.nl/),
 [Tweede Golf](https://tweedegolf.nl/), and
 [Trifecta Tech Foundation](https://trifectatech.org/)
-we collaborate closely to share responsibility for maintaining Rust and mentoring new contributors.
+we collaborate closely to share resources and responsibility for maintaining Rust and mentoring new contributors.
 
 - {{ <person id="jana" role="fulltime"
   description="Member of the Rust Compiler Team and host of the weekly Compiler Team office hours."
