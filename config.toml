@@ -1,2 +1,17 @@
 base_url = "https://rustnl.org/"
 skip_content_templating = [] # This site requires Zola 0.23 or newer.
+
+title = "RustNL"
+description = "News and updates from RustNL"
+author = "RustNL"
+
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+
+taxonomies = [
+    { name = "tags", render = true, feed = false },
+]
+
+[markdown.highlighting]
+# Syntax highlighting (Giallo, Zola >= 0.22). Themes: https://github.com/getzola/giallo#built-in
+theme = "material-theme-ocean"

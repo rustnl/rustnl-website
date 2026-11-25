@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main_id %}blog{% endblock main_id %}
+
+{% block content %}
+    {{ section.content | safe }}
+    <p class="feeds">
+      Subscribe: <a href="{{ get_url(path="atom.xml") | safe }}">Atom</a> &middot; <a href="{{ get_url(path="rss.xml") | safe }}">RSS</a>{% if section.pages %} &middot; <a href="{{ get_url(path="tags") | safe }}">All tags</a>{% endif %}
+    </p>
+    {% for post in section.pages %}
+      <hr>
+      {% include "components/blogpost_card.html" %}
+    {% else %}
+      <p>No posts yet.</p>
+    {% endfor %}
+    <hr>
+{% endblock content %}
