@@ -145,8 +145,14 @@ header .logo {
 }
 
 header .logo img {
-  height: 3rem;
+  height: 2.25rem;
   vertical-align: middle;
+}
+
+@media (min-width: 48rem) {
+  header .logo img {
+    height: 3rem;
+  }
 }
 
 .site-menu {
