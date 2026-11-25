@@ -2,7 +2,6 @@
 title = "Example post - stabilizing the never type"
 date = 2026-11-25
 authors = ["RustNL"]
-description = "A short description used for the page meta description."
 draft = true # drafts are only rendered with `zola serve --drafts`
 
 [taxonomies]

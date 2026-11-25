@@ -6,8 +6,6 @@
   <h2><a href="{{ post_link | safe }}">{{ post.title }}</a></h2>
   {% if post.summary -%}
     {{ post.summary | safe }}
-  {%- elif post.description -%}
-    <p>{{ post.description }}</p>
   {%- endif %}
   <p><a class="button" href="{{ post_link | safe }}">
     {%- if post.extra.externalLink %}More on {{ post.extra.source or "external site" }}{% else %}Read more{% endif -%}
