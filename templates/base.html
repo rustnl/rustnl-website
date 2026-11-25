@@ -1,0 +1,56 @@
+{% set entry = page or section or {} -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title -%}
+  {% if entry.title -%}
+    <title>{{ entry.title }} - RustNL</title>
+  {% else -%}
+    <title>RustNL - Stichting Rust Nederland</title>
+  {% endif -%}
+  {% endblock title -%}
+  {% if entry.extra?.image -%}
+    {% set imageUrl = get_url(path=entry.extra.image) %}
+    <meta name="image" property="og:image" content="{{imageUrl | safe}}">
+  {% else -%}
+    <meta property="og:image" content="https://rustnl.org/images/logo-landscape-large.png">
+  {% endif -%}
+  <meta name="description" content="{{ entry.description or "RustNL - Stichting Rust Nederland" }}">
+  <link rel="icon" href="/images/svg/logo-square.svg" type="image/svg">
+  <link rel="alternate" type="application/atom+xml" title="RustNL blog (Atom)" href="{{ get_url(path="atom.xml") | safe }}">
+  <link rel="alternate" type="application/rss+xml" title="RustNL blog (RSS)" href="{{ get_url(path="rss.xml") | safe }}">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Source+Code+Pro:wght@300&amp;family=Work+Sans:wght@300;700&amp;display=swap">
+  <link rel="stylesheet" href="/css/rustnl.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/"><img src="/images/svg/logo.svg" alt="RustNL"></a>
+      <details class="site-menu">
+        <summary class="button"><span>Menu</span><span>Close</span></summary>
+        <a href="/events">Events</a>
+        <a href="/maintainers">Rust Maintainers Team</a>
+        <a href="/fund">Support us</a>
+        <a href="/blog">Blog</a>
+        <a href="/about">About</a>
+        <a href="https://2027.rustweek.org/" class="button">RustWeek 2027</a>
+      </details>
+    </nav>
+    <h1>{% block heading %}{{ entry.title or "RustNL" }}{% endblock heading %}</h1>
+  </header>
+  <main id="{% block main_id %}{{ entry.slug or "home" }}{% endblock main_id %}">
+    {% block content %}{% endblock content %}
+  </main>
+  <footer>
+    <menu>
+      <li><a href="https://fosstodon.org/@rustnl" rel="me">Mastodon
+      <li><a href="https://bsky.app/profile/rustnl.bsky.social" rel="me">Bluesky
+      <li><a href="https://www.linkedin.com/company/rustnl/" rel="me">LinkedIn
+      <li><a href="{{ get_url(path="atom.xml") | safe }}">Blog feed
+    </menu>
+  </footer>
+</body>
+</html>

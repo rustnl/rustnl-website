@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <article class="post">
+      {% set post = page %}
+      {% include "components/blogpost_meta.html" %}
+      {{ page.content | safe }}
+      {% if page.extra.externalLink -%}
+        <p><a class="button" href="{{ page.extra.externalLink | safe }}">More on {{ page.extra.source or "external site" }}</a></p>
+      {%- endif %}
+    </article>
+    <hr>
+    <p class="button-group"><a class="button" href="{{ get_url(path="blog") | safe }}">All blog posts</a></p>
+{% endblock content %}

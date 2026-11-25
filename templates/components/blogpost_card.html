@@ -1,0 +1,15 @@
+{#- Expects `post` to be set. -#}
+{% set post_link = post.extra.externalLink or post.path -%}
+<article class="post-card">
+  {% set no_tag_link = true %}
+  {% include "components/blogpost_meta.html" %}
+  <h2><a href="{{ post_link | safe }}">{{ post.title }}</a></h2>
+  {% if post.summary -%}
+    {{ post.summary | safe }}
+  {%- elif post.description -%}
+    <p>{{ post.description }}</p>
+  {%- endif %}
+  <p><a class="button" href="{{ post_link | safe }}">
+    {%- if post.extra.externalLink %}More on {{ post.extra.source or "external site" }}{% else %}Read more{% endif -%}
+  </a></p>
+</article>

@@ -1,0 +1,17 @@
+{#- Expects `post` to be set. Set `no_tag_link` to render tags as plain text. -#}
+<p class="post-meta">
+  <time datetime="{{ post.date }}">{{ post.date | date(format="%B %-d, %Y") }}</time>
+  {%- if post.authors %}
+  <span class="post-authors">by {{ post.authors | join(sep=", ") }}</span>
+  {%- endif %}
+  {%- if post.extra.source %}
+  <span class="post-source">via {{ post.extra.source }}</span>
+  {%- endif %}
+  {%- for tag in post.taxonomies.tags | default(value=[]) %}
+    {%- if no_tag_link %}
+  <span class="tag">{{ tag }}</span>
+    {%- else %}
+  <a class="tag" href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>
+    {%- endif %}
+  {%- endfor %}
+</p>
