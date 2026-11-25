@@ -10,7 +10,7 @@ You can help us by:
 
 - Sponsoring [our Rust Maintainers Team](https://github.com/sponsors/rustnl),
 
-- Becoming a [sponsor of RustWeek](https://2026.rustweek.org/#sponsors), or
+- Becoming a [sponsor of RustWeek](https://2027.rustweek.org/#sponsors), or
 
 - Donating to [NLnet Foundation's Rust Maintainers Fund](https://nlnet.nl/maintainers/rust/).
 
