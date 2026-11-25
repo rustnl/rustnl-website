@@ -1,5 +1,5 @@
 +++
-title = "Example external post"
+title = "Example post - stabilizing the never type"
 date = 2026-11-25
 authors = ["RustNL"]
 description = "A short description used for the page meta description."
@@ -14,6 +14,6 @@ externalLink = "https://www.youtube.com/watch?v=fP2FiYfyzlk"  # Optional: list a
 source = "Rust Project Content Team"  # Name of the external site, shown with externalLink.
 +++
 
-The Rust Release Changelog show with our staff maintainer waffle, talking about the stabilazation of the never type (!).
+The Rust Release Changelog show with our staff maintainer waffle, talking about the stabilization of the never type (!).
 
 <!-- more -->

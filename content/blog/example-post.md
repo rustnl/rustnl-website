@@ -1,5 +1,5 @@
 +++
-title = "Example blog post"
+title = "Example blog post with a decent length title"
 date = 2026-11-25
 authors = ["Erik Jonkers"]
 description = "A short description used for the page meta description."
